@@ -55,7 +55,7 @@ while gameRunning:
     fruitJson = getFruitInfo(userChoice)
 
     # putting everything into an object
-    newFruit = Fruit(fruitJson["name"], fruitJson["nutritions"["calories"]], fruitJson["sugar"], fruitJson["family"])
+    newFruit = Fruit(fruitJson["name"], fruitJson["nutritions"]["calories"], fruitJson["nutritions"]["sugar"], fruitJson["family"])
     
     # add to list
     fruits.append(newFruit)

@@ -63,9 +63,9 @@ while gameRunning:
     # another
     print("want to add another? (y/n)")
     confirm = input("> ")
-    if confirm == "y":
+    if confirm.startswith("y"):
         gameRunning = True
-    if confirm == "n":
+    if confirm.startswith("n"):
         gameRunning = False
 
     

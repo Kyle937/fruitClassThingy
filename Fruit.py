@@ -56,7 +56,8 @@ while gameRunning:
 
     # putting everything into an object
     newFruit = Fruit(fruitJson["name"], fruitJson["nutritions"]["calories"], fruitJson["nutritions"]["sugar"], fruitJson["family"])
-    
+    print(newFruit)
+
     # add to list
     fruits.append(newFruit)
 
@@ -75,3 +76,7 @@ total = 0
 for item in fruits:
     total += item.getCalories()
 print(f"total calories: {total}")
+total = 0
+for item in fruits:
+    total += item.getSugar()
+print(f"total sugar: {total}")
